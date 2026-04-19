@@ -4,6 +4,8 @@ A faithful Missile Command arcade clone built with Love2D for [Omarchy](https://
 
 Vector-rendered cities and trails with bloom, flashing explosion palettes, and Omarchy theme integration — the game adopts your desktop colours.
 
+[![OMA-COMMAND gameplay](https://img.youtube.com/vi/pnwiKlbC574/maxresdefault.jpg)](https://youtu.be/pnwiKlbC574)
+
 ## Install
 
 ```bash
