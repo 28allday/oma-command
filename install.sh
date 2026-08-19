@@ -7,7 +7,7 @@ set -euo pipefail
 
 GAME_NAME="oma-command"
 DISPLAY_NAME="OMA-COMMAND"
-COMMENT="Missile Command clone with Omarchy theme integration"
+COMMENT="Vector missile defence with Omarchy theme integration"
 REPO_URL="https://git.no-signal.uk/nosignal/oma-command.git"
 
 INSTALL_DIR="$HOME/.local/share/$GAME_NAME"

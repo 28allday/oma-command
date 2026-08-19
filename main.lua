@@ -476,7 +476,7 @@ function love.draw()
             love.graphics.setFont(Fonts.large)
             local textPulse = 0.7 + math.sin(t * 3) * 0.3
             love.graphics.setColor(p.bright[1], p.bright[2], p.bright[3], textPulse)
-            love.graphics.printf("THE END", 0, midY, sw, "center")
+            love.graphics.printf("ALL CITIES LOST", 0, midY, sw, "center")
         end
 
         if World.gameOverTimer > 1.5 then

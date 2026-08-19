@@ -6,9 +6,9 @@ local Batteries = {}
 local batteries = {}
 
 local DEFS = {
-    { name = "Alpha", x = 18,  y = World.GROUND_Y + 6, speed = 180, keys = {"a", "1"} },
-    { name = "Delta", x = 128, y = World.GROUND_Y + 6, speed = 420, keys = {"s", "2"} },
-    { name = "Omega", x = 238, y = World.GROUND_Y + 6, speed = 180, keys = {"d", "3"} },
+    { name = "Bravo",  x = 18,  y = World.GROUND_Y + 6, speed = 180, keys = {"a", "1"} },
+    { name = "Kilo",   x = 128, y = World.GROUND_Y + 6, speed = 420, keys = {"s", "2"} },
+    { name = "Sierra", x = 238, y = World.GROUND_Y + 6, speed = 180, keys = {"d", "3"} },
 }
 
 function Batteries.init()
@@ -51,9 +51,9 @@ function Batteries.fire(index)
 end
 
 function Batteries.findNearest(gx, gy)
-    local delta = batteries[2]
-    if delta.alive and delta.ammo > 0 then
-        return delta
+    local centre = batteries[2]
+    if centre.alive and centre.ammo > 0 then
+        return centre
     end
     local best = nil
     local bestDist = math.huge
@@ -102,7 +102,7 @@ function Batteries.draw()
             else tilt = 0 end
             local ca, sa = math.cos(tilt), math.sin(tilt)
 
-            -- Cab-facing direction: Alpha (left battery) faces right, Omega faces left, Delta faces right by default
+            -- Cab-facing direction: the left battery faces right, the right one faces left, the centre faces right by default
             local dir
             if b.index == 1 then dir = 1
             elseif b.index == 3 then dir = -1

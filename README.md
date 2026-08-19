@@ -1,6 +1,6 @@
 # OMA-COMMAND
 
-A faithful Missile Command arcade clone built with Love2D for [Omarchy](https://omarchy.org/) Linux.
+A vector missile-defence arcade game built with Love2D for [Omarchy](https://omarchy.org/) Linux.
 
 Vector-rendered cities and trails with bloom, flashing explosion palettes, and Omarchy theme integration — the game adopts your desktop colours.
 
@@ -32,9 +32,9 @@ oma-command-uninstall
 |-------|--------|
 | **Mouse** | Move crosshair |
 | **Left click** | Fire from nearest battery with ammo |
-| **A** / **1** | Fire from Alpha (left) battery |
-| **S** / **2** | Fire from Delta (centre, fast) battery |
-| **D** / **3** | Fire from Omega (right) battery |
+| **A** / **1** | Fire from Bravo (left) battery |
+| **S** / **2** | Fire from Kilo (centre, fast) battery |
+| **D** / **3** | Fire from Sierra (right) battery |
 | **Enter** | Start game / dismiss screens |
 | **Escape** | Pause / quit |
 | **F1** | Toggle CRT effect |
@@ -43,7 +43,7 @@ oma-command-uninstall
 ## Gameplay
 
 - Three missile batteries defend six cities against incoming ICBMs
-- Delta (centre) ABMs fly fast; Alpha and Omega are slower but still precise
+- Kilo (centre) ABMs fly fast; Bravo and Sierra are slower but still precise
 - Missiles split into MIRVs mid-flight; smart bombs dodge your explosions
 - Bombers appear from wave 2, satellites from wave 4, killer satellites from wave 8
 - Chain explosions by detonating ABMs near incoming warheads
@@ -84,6 +84,19 @@ git clone https://git.no-signal.uk/nosignal/oma-command.git
 cd oma-command
 love .
 ```
+
+## Originality
+
+This is a missile-defence game, and it is not the first one. What it owes to the
+genre are its rules — defend cities, three batteries, warheads that split,
+explosions that chain — and rules are not anyone's property.
+
+Everything you can see or hear is this project's own. The city outlines and the
+launchers were drawn by hand in the game's own coordinate space, the palette is
+derived from your active theme at runtime, and every sound is synthesised by
+`audio/sounds.lua` rather than sampled. No code, art, audio or text has been
+taken from any commercial game, and there is no affiliation with, or
+endorsement by, any game publisher.
 
 ## License
 
