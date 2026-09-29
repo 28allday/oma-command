@@ -8,7 +8,7 @@ set -euo pipefail
 GAME_NAME="oma-command"
 DISPLAY_NAME="OMA-COMMAND"
 COMMENT="Vector missile defence with Omarchy theme integration"
-REPO_URL="https://git.no-signal.uk/nosignal/oma-command.git"
+REPO_URL="https://github.com/28allday/oma-command.git"
 
 INSTALL_DIR="$HOME/.local/share/$GAME_NAME"
 DESKTOP_FILE="$HOME/.local/share/applications/$GAME_NAME.desktop"
@@ -110,7 +110,7 @@ mkdir -p "$HOME/.local/bin"
 cat > "$UNINSTALL_BIN" << 'UNINSTALL'
 #!/bin/bash
 # Uninstall OMA-COMMAND
-SCRIPT_URL="https://git.no-signal.uk/nosignal/oma-command/raw/branch/master/install.sh"
+SCRIPT_URL="https://raw.githubusercontent.com/28allday/oma-command/master/install.sh"
 curl -sL "$SCRIPT_URL" | bash -s uninstall 2>/dev/null || bash "$HOME/.local/share/oma-command/install.sh" uninstall 2>/dev/null || {
     # Fallback: inline uninstall
     rm -f "$HOME/.local/share/applications/oma-command.desktop"

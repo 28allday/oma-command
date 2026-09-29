@@ -9,7 +9,7 @@ Vector-rendered cities and trails with bloom, flashing explosion palettes, and O
 ## Install
 
 ```bash
-curl -sL https://git.no-signal.uk/nosignal/oma-command/raw/branch/master/install.sh | bash
+curl -sL https://raw.githubusercontent.com/28allday/oma-command/master/install.sh | bash
 ```
 
 This will:
@@ -80,7 +80,7 @@ Wave score multiplier: ×1 (waves 1–2), ×2 (3–4), ×3 (5–6), ×4 (7–8),
 ## Run from source
 
 ```bash
-git clone https://git.no-signal.uk/nosignal/oma-command.git
+git clone https://github.com/28allday/oma-command.git
 cd oma-command
 love .
 ```
